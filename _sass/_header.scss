@@ -1,0 +1,42 @@
+.site-header {
+  background-color: $blue;
+  padding-top: 70px;
+}
+
+.nav-bar {
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: $blue;
+
+  .nav-bar-inner {
+    @include outer-container;
+  }
+}
+
+.site-title {
+  display: block;
+  max-width: 200px;
+  @include span-columns(3);
+}
+
+.site-nav {
+  @include span-columns(9);
+  text-align: right;
+
+  a {
+    color: white;
+  }
+
+  .call-to-action {
+    @extend button;
+    background-color: $aqua;
+
+    &:hover {
+      background-color: shade($aqua, 10%);
+    }
+  }
+}

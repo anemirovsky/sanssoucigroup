@@ -1,0 +1,21 @@
+.banner {
+  height: 500px;
+  background: transparent url('/assets/ssg_header.jpg') center center no-repeat;
+  background-size: cover;
+  padding-top: 160px;
+
+  @include media($large) {
+    height: 600px;
+  }
+
+  a {
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    @include media($small) {
+      
+    }
+  }
+}

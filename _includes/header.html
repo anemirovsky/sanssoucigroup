@@ -1,0 +1,28 @@
+<header class="site-header">
+
+  <div class="nav-bar">
+    <div class="nav-bar-inner">
+      <a class="site-title" href="{{ site.baseurl }}/"><img src="/assets/ssg_logo.png" /></a>
+      <nav class="site-nav">
+        <div class="trigger">
+          {% for my_page in site.pages %}
+            {% if my_page.title %}
+              <!--<a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>-->
+            {% endif %}
+          {% endfor %}
+          <a class="call-to-action" href="mailto:hello@sanssoucigroup.com">Get In Touch</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+    <div class="banner">
+      <a href="{{ site.baseurl }}/"><img src="/assets/ssg_logo.png" /></a>
+    </div>
+    
+    <div class="tagline">
+      <h2>focus on your vision</h2>
+      <h4>we'll do the rest<h4>
+    </div>
+
+</header>
