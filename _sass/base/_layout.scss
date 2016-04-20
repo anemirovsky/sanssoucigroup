@@ -7,3 +7,33 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+.two-columns {
+  @include outer-container;
+  max-width: 600px;
+
+  @include media($medium) {
+    max-width: 700px;
+  }
+
+  @include media($large) {
+    max-width: 900px;
+  }
+
+  .column {
+    padding: 20px;
+
+    @include media($medium) {
+      @include span-columns(6);
+      @include omega();
+      padding: 30px;
+    }
+
+    @include media($large) {
+      padding: 40px;
+    }
+  }
+
+  .column:last-child {
+  }
+}

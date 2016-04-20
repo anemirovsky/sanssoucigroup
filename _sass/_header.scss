@@ -19,12 +19,17 @@
 
 .site-title {
   display: block;
-  max-width: 200px;
-  @include span-columns(3);
+  margin-top: 5px;
+  max-width: 150px;
+  float: left;
+
+  @include media($small) {
+    max-width: 200px;
+  }
 }
 
 .site-nav {
-  @include span-columns(9);
+  float: right;
   text-align: right;
 
   a {
@@ -33,7 +38,14 @@
 
   .call-to-action {
     @extend button;
+    font-size: modular-scale(-1);
+    padding: 0.75em;
     background-color: $aqua;
+
+    @include media($small) {
+      font-size: modular-scale(0);
+      padding: 0.75em 1.5em;
+    }
 
     &:hover {
       background-color: shade($aqua, 10%);
