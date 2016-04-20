@@ -156,7 +156,7 @@ html {
       padding: 40px; } }
   @media screen and (min-width: 900px) {
     .callout .wrapper, .spotlight, .site-footer .wrapper {
-      padding: 40px 10px; } }
+      padding: 40px 30px; } }
 
 ul,
 ol {
