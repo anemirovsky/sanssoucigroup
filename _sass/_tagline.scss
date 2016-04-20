@@ -1,5 +1,5 @@
 .tagline {
-  @include outer-container;
+  background-color: $secondary-background-color;
   padding: 30px 20px;
   color: white;
 
@@ -12,6 +12,7 @@
   }
 
   p {
+    @include outer-container(1000px);
     font-size: modular-scale(2);
     line-height: modular-scale(1);
     margin-bottom: 0;

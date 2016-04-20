@@ -1,0 +1,35 @@
+.quote {
+  @extend %default-container;
+  padding: 20px;
+
+  @include media($medium) {
+    padding: 40px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+
+    @include media($small) {
+      float: left;
+    }
+  }
+
+  p {
+    font-size: modular-scale(1);
+
+    @include media($small) {
+      margin-left: 150px;
+    }
+
+    @include media($medium) {
+      font-size: modular-scale(2);
+    }
+
+    em {
+      display: block;
+      font-size: modular-scale(-1);
+      text-align: right;
+    }
+  }
+}

@@ -1,5 +1,4 @@
 .site-header {
-  background-color: $blue;
   padding-top: 70px;
 }
 
@@ -10,10 +9,21 @@
   left: 0;
   z-index: 9999;
   width: 100%;
-  background-color: $blue;
+  background-color: $secondary-background-color;
+  border-bottom: 1px solid #444;
 
   .nav-bar-inner {
     @include outer-container;
+  }
+  
+  .call-to-action {
+    font-size: modular-scale(-1);
+    padding: 0.75em;
+
+    @include media($small) {
+      font-size: modular-scale(0);
+      padding: 0.75em 1.5em;
+    }
   }
 }
 
@@ -31,24 +41,4 @@
 .site-nav {
   float: right;
   text-align: right;
-
-  a {
-    color: white;
-  }
-
-  .call-to-action {
-    @extend button;
-    font-size: modular-scale(-1);
-    padding: 0.75em;
-    background-color: $aqua;
-
-    @include media($small) {
-      font-size: modular-scale(0);
-      padding: 0.75em 1.5em;
-    }
-
-    &:hover {
-      background-color: shade($aqua, 10%);
-    }
-  }
 }

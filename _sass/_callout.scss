@@ -1,0 +1,11 @@
+.callout {
+  background-color: $light-gray;
+
+  .wrapper {
+    @extend %default-container-wide;
+  }
+
+  p {
+    font-size: modular-scale(1);
+  }
+}

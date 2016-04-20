@@ -1,0 +1,53 @@
+.site-footer {
+  color: white;
+  background-color: $dark-gray;
+
+  h2 {
+    font-size: modular-scale(2);
+    margin-bottom: 10px;
+  }
+
+  .wrapper {
+    @extend %default-container-wide;
+    @include outer-container;
+  }
+
+  .footer-columns {
+    .column {
+      margin-bottom: 30px;
+
+      @include media($medium) {
+        width: 35%;
+        float: left;
+      }
+
+      p {
+        @include media($medium) {
+          padding-right: 60px;
+          border-right: solid 1px tint($dark-gray, 20%);
+        }
+      }
+    }
+
+    .column:last-child {
+      @include media($medium) {
+        width: 65%;
+        padding-left: 60px;
+      }
+
+      ul {
+        @include media($large) {
+          @include prefixer(column-count, 2, webkit moz);
+          @include prefixer(column-gap, 20px, webkit moz);
+          @include prefixer(column-width, 50%, webkit moz);
+        }
+      }
+    }
+  }
+
+  .copyright {
+    clear: both;
+    font-size: modular-scale(-1);
+    margin: 0;
+  }
+}

@@ -1,4 +1,5 @@
-#{$all-buttons} {
+#{$all-buttons},
+a.button {
   appearance: none;
   background-color: $action-color;
   border: 0;
@@ -20,7 +21,7 @@
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
+    background-color: shade($action-color, 10%);
     color: #fff;
   }
 
