@@ -16,20 +16,32 @@
   }
 
   p {
-    font-size: modular-scale(1);
+    font-size: modular-scale(0);
 
     @include media($small) {
       margin-left: 150px;
     }
 
     @include media($medium) {
-      font-size: modular-scale(2);
+      font-size: modular-scale(1);
+    }
+
+    &.shortquote {
+      font-size: modular-scale(1);
+
+      @include media($medium) {
+        font-size: modular-scale(3);
+      }
     }
 
     em {
       display: block;
-      font-size: modular-scale(-1);
+      font-size: modular-scale(0);
       text-align: right;
+
+      @include media($medium) {
+        font-size: modular-scale(-1);
+      }
     }
   }
 }

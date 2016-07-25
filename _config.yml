@@ -10,7 +10,7 @@ title: Sans Souci
 email: hello@sanssoucigroup.com
 description: > # this means to ignore newlines until "baseurl:"
   Sans Souci provides flexible, part-time business operations services to 
-  small businesses, start-ups and self-employed individuals, who want things 
+  small businesses, start-ups and self-employed professionals, who want things 
   to run more efficiently so they can focus on the needs of their business.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://sanssoucigroup.com" # the base hostname & protocol for your site

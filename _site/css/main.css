@@ -387,17 +387,25 @@ body {
       .quote img {
         float: left; } }
   .quote p {
-    font-size: 1.25em; }
+    font-size: 1em; }
     @media screen and (min-width: 400px) {
       .quote p {
         margin-left: 150px; } }
     @media screen and (min-width: 600px) {
       .quote p {
-        font-size: 1.5625em; } }
+        font-size: 1.25em; } }
+    .quote p.shortquote {
+      font-size: 1.25em; }
+      @media screen and (min-width: 600px) {
+        .quote p.shortquote {
+          font-size: 1.95313em; } }
     .quote p em {
       display: block;
-      font-size: 0.8em;
+      font-size: 1em;
       text-align: right; }
+      @media screen and (min-width: 600px) {
+        .quote p em {
+          font-size: 0.8em; } }
 
 .spotlight h4 {
   font-size: 1.95313em;
