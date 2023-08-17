@@ -4,4 +4,4 @@ $ bundle install
 
 To build:
 
-$ jekyll b
+$ bundle exec jekyll b
